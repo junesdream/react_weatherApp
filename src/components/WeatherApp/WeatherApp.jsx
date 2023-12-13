@@ -13,7 +13,7 @@ import humidity_icon from '../Assets/humidity.png'
 
 const WeatherApp = () => {
 
-const api_key = "";
+const api_key = process.env.REACT_APP_API_KEY;;
 const [wicon, setWicon] = useState(clear_icon);
 
 const search = async () => {
@@ -62,7 +62,6 @@ const search = async () => {
 			search();
 		}
  };
-
 
 
   return (
